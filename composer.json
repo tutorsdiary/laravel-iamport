@@ -1,0 +1,40 @@
+{
+    "name": "tuda/laravel-iamport",
+    "description": "Iamport; REST API client for laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Louis",
+            "email": "louis.choi@tutorsdiary.com"
+        }
+    ],
+    "keywords": [
+        "laravel",
+        "payment",
+        "iamport"
+    ],
+    "require": {
+        "php": ">=7.1.3"
+    },
+    "require-dev": {
+        "illuminate/support": "^5.5",
+        "phpunit/phpunit": "^6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tuda\\Iamport\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tuda\\Iamport\\IamportServiceProvider"
+            ],
+            "aliases": {
+                "Iamport": "Tuda\\Iamport\\Facades\\Iamport"
+            }
+        }
+    }
+}
